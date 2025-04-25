@@ -3,24 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="CAMI-2DNet: A deep learning approach for assessing motor imitation in autism spectrum conditions using video data.">
+  <meta name="keywords" content="Autism Assessment, Motor Imitation, Deep Learning, CAMI-2DNet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
+  <title>CAMI-2DNet: Computerized Assessment of Motor Imitation for Distinguishing Autism in Video</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -52,7 +38,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
+      <a class="navbar-item" href="https://www.upenn.edu">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
@@ -60,67 +46,94 @@
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
-          More Research
+          Related Projects
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
+          <a class="navbar-item" href="https://arxiv.org/abs/2501.08609">
+            CAMI-2DNet
           </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
+          <a class="navbar-item" href="https://link-to-cami3d">
+            CAMI-3D
           </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
+          <a class="navbar-item" href="https://link-to-cami2d">
+            CAMI-2D
           </a>
         </div>
       </div>
     </div>
-
   </div>
 </nav>
-
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">Computerized Assessment of Motor Imitation for Distinguishing Autism in Video</h1>
           <div class="is-size-5 publication-authors">
+            <!-- Author Block 1 -->
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+                <div class="author-thumbnail">
+                <img src="https://kaleab.me/src/img/a.jpeg" alt="Kaleab A. Kinfu">
+                </div>
+                <a href="https://kaleab.me">Kaleab A. Kinfu</a><sup>1</sup>,
+            </span>
+
+            <!-- Author Block 2 -->
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+                <div class="author-thumbnail">
+                <img src="https://assets.underline.io/profile/64098/square_avatar/medium-943994fa19322c462e873e2c397d1287.jpg" alt="Carolina Pacheco">
+                </div>
+                <a href="https://scholar.google.com/citations?user=OJSAJYIAAAAJ&hl=en">Carolina Pacheco</a><sup>2</sup>,
+            </span>
+
+            <!-- Remaining authors -->
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+                <div class="author-thumbnail">
+                <img src="https://unionathletics.com/images/2020/10/27/Sperry_Alice_2021_HS02.JPG" alt="Alice D. Sperry">
+                </div>
+                <a href="https://www.linkedin.com/in/alice-sperry-a78b241b4/">Alice D. Sperry</a> <sup>3</sup>,
+            </span>
+
+            <span class="author-block">
+                <div class="author-thumbnail">
+                    <img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=jj1XKeYAAAAJ&citpid=1" alt="Deana Crocetti">
+                </div>
+              <a href="https://scholar.google.com/citations?user=jj1XKeYAAAAJ&hl=en">Deana Crocetti</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+                <div class="author-thumbnail">
+                    <img src="https://cdn.theconversation.com/avatars/1199313/width238/image-20210126-19-1eh8zkv.jpg" alt="Bahar Tunçgenç">
+                </div>
+              <a href="https://www.bahartuncgenc.com/">Bahar Tunçgenç</a><sup>4</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+                <div class="author-thumbnail">
+                    <img src="https://www.kennedykrieger.org/sites/default/files/styles/profiles_left_column_325_x_275_/public/library/images/faculty/Stewart-H.-Mostofsky.jpg" alt="Stewart H. Mostofsky">
+                </div>
+              <a href="https://www.kennedykrieger.org/patient-care/faculty-staff/stewart-mostofsky">Stewart H. Mostofsky</a><sup>3,5</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+                <div class="author-thumbnail">
+                    <img src="https://directory.seas.upenn.edu/wp-content/uploads/2022/10/Vidal_Rene_Photo-e1666973953718.jpg" alt="René Vidal">
+                </div>
+              <a href="https://www.grasp.upenn.edu/people/rene-vidal/">René Vidal</a><sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>University of Pennsylvania</span>
+            <span class="author-block"><sup>2</sup>Johns Hopkins University</span>
+            <span class="author-block"><sup>3</sup>Kennedy Krieger Institute</span>
+            <span class="author-block"><sup>4</sup>Nottingham Trent University</span>
+            <span class="author-block"><sup>5</sup>Johns Hopkins School of Medicine</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://arxiv.org/pdf/2501.08609" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -129,7 +142,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/abs/2501.08609" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -137,19 +150,9 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/kaleab-k/CAMI-2DNet" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -159,96 +162,51 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                <a href="https://github.com/kaleab-k/CAMI-2DNet/releases/tag/0.1" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
                   </a>
-            </div>
+              </span>
+              <!-- Colab Link. -->
+              <span class="link-block">
+                <a href="https://colab.research.google.com/drive/#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                   <svg width="30" height="30">       
+                    <image xlink:href="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" width="30" height="30"></image>    
+                   </svg>
+                  <span>&nbsp;&nbsp;Colab</span>
+                  </a>
+              </span>
+              <!-- Hugging Face Link. -->
+              <span class="link-block">
+                <a href="https://ac29c4dfd9e68b7120.gradio.live" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span>🤗&nbsp;&nbsp;Demo</span>
+                  </a>
+              </span>
 
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+  
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
+        <video id="teaser" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/teaser_kki.mp4"
+                    type="video/mp4">
+          </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        CAMI-2DNet uses disentangled motion representations from video to automatically assess motor imitation and distinguish ASC from NT individuals.
       </h2>
     </div>
   </div>
 </section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -258,210 +216,84 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Motor imitation impairments are commonly reported in individuals with autism spectrum conditions (ASCs), suggesting that motor imitation could be used as a phenotype for addressing autism heterogeneity. 
+            Traditional methods for assessing motor imitation are subjective and labor-intensive, and require extensive human training. Modern Computerized Assessment of Motor Imitation (CAMI) methods, such as CAMI-3D for motion capture data and CAMI-2D for video data, are less subjective. 
+            However, they rely on labor-intensive data normalization and cleaning techniques, and human annotations for algorithm training. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            To address these challenges, we propose CAMI-2DNet, a scalable and interpretable deep learning-based approach to motor imitation assessment in video data, which eliminates the need for data normalization, cleaning and annotation. 
+            CAMI-2DNet uses an encoder-decoder architecture to map a video to a motion encoding that is disentangled from nuisance factors such as body shape and camera views. 
+            To learn a disentangled representation, we employ synthetic data generated by motion retargeting of virtual characters through the reshuffling of motion, body shape, and camera views, as well as real participant data. 
+            To automatically assess how well an individual imitates an actor, we compute a similarity score between their motion encodings, and use it to discriminate individuals with ASCs from neurotypical (NT) individuals.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Our comparative analysis demonstrates that CAMI-2DNet has a strong correlation with human scores while outperforming CAMI-2D in discriminating ASC vs NT children. 
+            Moreover, CAMI-2DNet performs comparably to CAMI-3D while offering greater practicality by operating directly on video data and without the need for ad-hoc data normalization and human annotations.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
-
     <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
+      <!-- Approach -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+          <h2 class="title is-3">Method Overview</h2>
+          <img src="./static/images/method.png" alt="CAMI-2DNet Architecture">
+          <p class="has-text-justified">
           </p>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Results</h2>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <img src="./static/images/results.png" alt="Performance Comparison">
+          <p class="has-text-justified">
+          </p>
+          <br/>
+          <img src="./static/images/results_2.png" alt="Performance Comparison">
+          <p class="has-text-justified">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
+    <pre><code>@misc{kinfu2025cami2dnet,
+      title={Computerized Assessment of Motor Imitation for Distinguishing Autism in Video (CAMI-2DNet)}, 
+      author={Kaleab A. Kinfu and Carolina Pacheco and Alice D. Sperry and Deana Crocetti and Bahar Tunçgenç and Stewart H. Mostofsky and René Vidal},
+      year={2025},
+      eprint={2501.08609},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2501.08609}, 
+    }</code></pre>
   </div>
 </section>
-
 
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+      <a class="icon-link" href="https://arxiv.org/pdf/2501.08609">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/cami-2dnet" class="external-link">
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -469,16 +301,10 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            Website template adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
           </p>
         </div>
       </div>
